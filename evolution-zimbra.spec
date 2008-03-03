@@ -24,6 +24,7 @@ BuildRequires: gettext
 BuildRequires: glib2-devel 
 #>= %{glib_version}
 BuildRequires: perl-XML-Parser
+BuildRequires: mono-devel
 
 %description
 Zimbra Connector provides access to Zimbra servers through Evolution.

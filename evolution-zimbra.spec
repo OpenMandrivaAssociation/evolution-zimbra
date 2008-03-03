@@ -5,13 +5,11 @@
 %define evo_api_version 2.22
 %define eds_api_version 1.2
 
-### Abstract ###
-
 Name: evolution-zimbra
 Version: 0.1.0
 Release: %mkrel 1
-License: Public Domain
-Group: System Environment/Libraries
+License: GPL
+Group: Networking/Mail
 Summary: Zimbra Connector for Evolution
 URL: http://sourceforge.net/projects/zimbraevo/
 Source: http://ovh.dl.sourceforge.net/sourceforge/zimbraevo/evolution-zimbra-0.1.0.tar.gz

@@ -24,7 +24,7 @@ BuildRequires: glib2-devel
 #>= %{glib_version}
 BuildRequires: intltool
 #gw libtool problem:
-BuildRequires: gnome-pilot-devel
+BuildRequires: gnome-pilot-devel libmono-devel
 
 %description
 Zimbra Connector provides access to Zimbra servers through Evolution.

@@ -7,12 +7,13 @@
 
 Name: evolution-zimbra
 Version: 0.1.1
-Release: %mkrel 4
+Release: %mkrel 5
 License: GPLv2+ and LGPLv2+
 Group: Networking/Mail
 Summary: Zimbra Connector for Evolution
 URL: http://sourceforge.net/projects/zimbraevo/
 Source: http://ovh.dl.sourceforge.net/sourceforge/zimbraevo/evolution-zimbra-%version.tar.gz
+Patch: evolution-zimbra-0.1.1-format-strings.patch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: curl-devel
@@ -31,8 +32,10 @@ Zimbra Connector provides access to Zimbra servers through Evolution.
 
 %prep
 %setup -q
+%patch -p1
 
 %build
+export CPPFLAGS="$CPPFLAGS -I%_includedir/libical"
 %configure2_5x
 %make
 

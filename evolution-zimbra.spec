@@ -7,7 +7,7 @@
 
 Name: evolution-zimbra
 Version: 0.1.1
-Release: %mkrel 5
+Release: %mkrel 6
 License: GPLv2+ and LGPLv2+
 Group: Networking/Mail
 Summary: Zimbra Connector for Evolution

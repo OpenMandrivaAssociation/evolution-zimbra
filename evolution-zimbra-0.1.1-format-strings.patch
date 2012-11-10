@@ -1,0 +1,12 @@
+diff -p -up evolution-zimbra-0.1.1/libezimbra/e-zimbra-connection.c~ evolution-zimbra-0.1.1/libezimbra/e-zimbra-connection.c
+--- evolution-zimbra-0.1.1/libezimbra/e-zimbra-connection.c~	2008-05-13 18:03:08.000000000 +0200
++++ evolution-zimbra-0.1.1/libezimbra/e-zimbra-connection.c	2009-02-02 21:45:33.000000000 +0100
+@@ -170,7 +170,7 @@ xml_parse_path (xmlNode *node,
+         gchar buf[1024];
+         gchar *tok;
+ 
+-        sprintf (buf, path);
++        sprintf (buf, "%s", path);
+ 
+         tok = strtok_r (buf, "/", &savept);
+ 

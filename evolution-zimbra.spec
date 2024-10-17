@@ -11,7 +11,7 @@ Release: %mkrel 6
 License: GPLv2+ and LGPLv2+
 Group: Networking/Mail
 Summary: Zimbra Connector for Evolution
-URL: http://sourceforge.net/projects/zimbraevo/
+URL: https://sourceforge.net/projects/zimbraevo/
 Source: http://ovh.dl.sourceforge.net/sourceforge/zimbraevo/evolution-zimbra-%version.tar.gz
 Patch: evolution-zimbra-0.1.1-format-strings.patch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root

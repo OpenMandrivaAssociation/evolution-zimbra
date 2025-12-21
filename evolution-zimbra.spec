@@ -16,6 +16,11 @@ Source: http://ovh.dl.sourceforge.net/sourceforge/zimbraevo/evolution-zimbra-%ve
 Patch: evolution-zimbra-0.1.1-format-strings.patch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires: curl-devel
 BuildRequires: evolution-devel 
 #>= %{evo_version}
